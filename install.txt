@@ -1,0 +1,14 @@
+$ npm i -g @nestjs/cli
+$ npm i --save @nestjs/mongoose mongoose
+$ npm i dotenv
+
+$ npm i --save @nestjs/swagger swagger-ui-express
+
+$ npm i bcrypt
+$ npm i -D @types/bcrypt
+
+$ npm i --save @nestjs/jwt passport-jwt
+$ npm i --save-dev @types/passport-jwt
+
+$ npm i cookie-parser
+$ npm i -D @types/cookie-parser
