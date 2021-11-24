@@ -9,7 +9,7 @@ export class UsersService {
         @InjectModel(Users.name) private userModel: Model<UsersDocument>
     ){}
 
-    async findOne(username: string): Promise<Users>{
-        return this.userModel.findOne({username: username})
+    async findOne(email: string): Promise<Users>{
+        return this.userModel.findOne({email: email})
     }
 }
