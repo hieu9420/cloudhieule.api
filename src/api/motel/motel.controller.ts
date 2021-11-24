@@ -16,6 +16,14 @@ export class MotelController {
     @ApiBearerAuth()
     @Get('getmotel')
     async getMotel(){
-        return this.motelService.findAll();
+        return this.motelService.findAllMotel();
+    }
+
+    @ApiTags('Motel Api')
+    @UseGuards(JwtAuthGuard)
+    @ApiBearerAuth()
+    @Get('getmotelcost')
+    async getMotelCost(){
+        return this.motelService.findAllMotelCost();
     }
 }
