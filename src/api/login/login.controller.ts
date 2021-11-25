@@ -23,6 +23,6 @@ export class LoginController {
     @ApiTags('Auth')
     @Post()
     async login(@Request() req) {
-        return this.authService.login(req.user);
+        return this.authService.login(req.user._doc);
     }
 }
